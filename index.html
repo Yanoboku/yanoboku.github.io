@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IT Solutions Landing Page">
+  <title>IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Замените на шрифты из макета -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo" aria-label="На главную">
+        <!-- Вставьте SVG логотип -->
+        <span>Logo</span>
+      </a>
+      
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#benefits" class="nav__link">Benefits</a></li>
+          <li><a href="#solutions" class="nav__link">Solutions</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title"><!-- Заголовок из макета --></h1>
+          <p class="hero__subtitle"><!-- Подзаголовок из макета --></p>
+          <a href="#contact" class="btn btn--primary">Contact Us</a>
+        </div>
+        <div class="hero__image">
+          <!-- Иллюстрация -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section (Scalable solutions) -->
+    <section class="info" id="info">
+      <div class="container">
+        <div class="info__content">
+          <!-- Текст и карточка -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="section-title"><!-- Заголовок секции --></h2>
+        
+        <div class="benefits__slider">
+          <div class="benefits__track" id="benefitsTrack">
+            <!-- Карточки преимуществ -->
+            <article class="benefit-card">
+              <div class="benefit-card__icon">
+                <!-- Иконка -->
+              </div>
+              <h3 class="benefit-card__title"><!-- Заголовок --></h3>
+              <p class="benefit-card__text"><!-- Описание --></p>
+            </article>
+            <!-- Повторить для других карточек -->
+          </div>
+          
+          <div class="benefits__nav">
+            <button class="benefits__arrow benefits__arrow--prev" id="benefitsPrev" aria-label="Предыдущий слайд">
+              <!-- Стрелка влево SVG -->
+            </button>
+            <button class="benefits__arrow benefits__arrow--next" id="benefitsNext" aria-label="Следующий слайд">
+              <!-- Стрелка вправо SVG -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title">Let's make your project real!</h2>
+        <a href="#contact" class="btn btn--secondary">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+      <div class="container">
+        <h2 class="section-title">POWERFUL SOLUTIONS</h2>
+        
+        <div class="solutions__grid">
+          <!-- Карточки услуг -->
+          <article class="solution-card">
+            <div class="solution-card__icon">
+              <!-- Иконка -->
+            </div>
+            <h3 class="solution-card__title"><!-- Заголовок --></h3>
+            <p class="solution-card__text"><!-- Описание --></p>
+          </article>
+          <!-- Повторить для других карточек -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (You start with objectives) -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__content">
+          <p class="about__text"><!-- Текст --></p>
+          <blockquote class="about__quote">
+            <p><!-- Цитата --></p>
+            <cite><!-- Автор --></cite>
+          </blockquote>
+          <div class="about__buttons">
+            <a href="#solutions" class="btn btn--primary">Our Solutions</a>
+            <a href="#contact" class="btn btn--outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title"><!-- Заголовок --></h2>
+        
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="firstName" class="contact-form__label">First Name *</label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                class="contact-form__input" 
+                required
+                aria-required="true"
+              >
+              <span class="contact-form__error" id="firstNameError"></span>
+            </div>
+            
+            <div class="contact-form__field">
+              <label for="lastName" class="contact-form__label">Last Name *</label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                class="contact-form__input" 
+                required
+                aria-required="true"
+              >
+              <span class="contact-form__error" id="lastNameError"></span>
+            </div>
+          </div>
+          
+          <div class="contact-form__field">
+            <label for="email" class="contact-form__label">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="contact-form__input" 
+              required
+              aria-required="true"
+            >
+            <span class="contact-form__error" id="emailError"></span>
+          </div>
+          
+          <div class="contact-form__field">
+            <label for="message" class="contact-form__label">Your Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="contact-form__textarea" 
+              rows="5"
+              required
+              aria-required="true"
+            ></textarea>
+            <span class="contact-form__error" id="messageError"></span>
+          </div>
+          
+          <button type="submit" class="btn btn--primary contact-form__submit">Send Message</button>
+          
+          <div class="contact-form__success" id="formSuccess" hidden>
+            Сообщение успешно отправлено!
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="#" class="logo footer__logo" aria-label="На главную">
+          <!-- Логотип -->
+          <span>Logo</span>
+        </a>
+        
+        <nav class="footer__nav" aria-label="Навигация в подвале">
+          <ul class="footer__list">
+            <li><a href="#benefits" class="footer__link">Benefits</a></li>
+            <li><a href="#solutions" class="footer__link">Solutions</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="footer__contacts">
+          <!-- Контакты -->
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__legal">© 2026 Company Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
