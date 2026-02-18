@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   // Замените 'landing-page' на название вашего репозитория
-  base: '/landing-page/',
+  base: '/github.io/',
   build: {
     outDir: 'dist',
   },
